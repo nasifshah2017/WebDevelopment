@@ -1,0 +1,23 @@
+p{
+
+/*Content - Width and Height*/
+
+width: 50%;
+
+/*Border*/
+
+border: 2px solid blue;
+
+/*Padding*/
+
+/*padding: 10px;*/
+padding-left: 40px;
+
+/*Margin*/
+/*margin: 100px;*/
+/*margin-top: 500px;*/
+/*margin: 20px 40px 500px 100px;*/ /* top right bottom left */
+/*margin: 0 auto 0 auto;*/ /* It centers the para by setting top and bottom to zero and leaving equal spaces on reight and left*/
+/*margin: 0 auto;*/ /* does the same as above*/
+margin: 50px 20px; /*50 on top and bottom 20 on left and right*/
+}
