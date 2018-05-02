@@ -31,7 +31,7 @@ var numberD = 5;
 
 while(numberD<=50)
 {
-	if(numberD%3===0 || numberD%5 ===0)
+	if(numberD%3===0 && numberD%5 ===0)
 	console.log(numberD);
 	//console.log(numberE);
 	numberD++;
