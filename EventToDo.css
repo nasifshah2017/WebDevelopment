@@ -1,0 +1,8 @@
+.done{
+	text-decoration: line-through; /*puts a line on the li element*/ 
+	opacity: 0.5;
+}
+
+.selected{
+	color: green; /*Turns the color of the item green, when the class is called*/
+}
