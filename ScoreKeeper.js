@@ -1,7 +1,6 @@
 var p1Button = document.querySelector("#p1");
 var p2Button = document.getElementById("p2");
 var resetButton = document.getElementById("reset");
-//var h1 = document.querySelector("h1"); // we don't need it anymore as we are using span on the html file
 var p1Display = document.querySelector("#p1Display");
 var p2Display = document.querySelector("#p2Display");
 var numInput = document.querySelector("input");
@@ -53,7 +52,7 @@ function reset(){
 
 numInput.addEventListener("change", function(){ //A change event will run anytime a value changes, 
 	//doesn't matter it changes by clicking a button or changed through typing, 
-	//but with "click" the event fires only when he button is clicked
+	//but with "click" the event fires only when the button is clicked
 	winningScoreDisplay.textContent = numInput.value; //It takes the value that user inputs on the 
 	//bar and changes the value on the text that shows the winning value to the user, 
 	//to the value of taken from the user
