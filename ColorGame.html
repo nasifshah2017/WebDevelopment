@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!--From Google Fonts-->
+	<link rel="stylesheet" type="text/css" href="ColorGame.css"> <!--Linking to CSS-->
+</head>
+<body>
+	<h1>
+		The Great
+		<br> <!--Adds a line break -->
+		<span id="colorDisplay">RGB</span>
+		<br><!--Sets a new line-->
+		 Color Game
+	</h1>
+	<!--span unifies RGB from the whole h1 text line so we can put
+	different color names instead of RGB-->
+
+	<div id="stripe"> <!--The bar that shows the buttons and the result-->
+		<button id="reset">New Colors</button>
+		<span id="message"></span>
+		<button class="mode">Easy</button>
+		<button class="mode selected">Hard</button>
+	</div>
+
+	<!--Sets up the squares-->
+	<!--It won't be visible unless we add padding on CSS-->
+
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<!--Linking to JS-->
+
+	<script type="text/javascript" src="ColorGame.js"></script>
+
+</body>
+</html>

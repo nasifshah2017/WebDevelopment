@@ -1,0 +1,82 @@
+body{
+	background-color: #232323; /*black*/
+	margin: 0; /*Getting rid of all spaces around h1 that was appearing from body*/
+	font-family: "Montserrat", "Avenir";
+}
+
+.square { /*Defined as class*/
+	width: 30%; /*width of each squares take 30% of total container width*/
+	background: purple;
+	padding-bottom: 30%; /*Providing space of 30% on the bottom of the sqaures*/
+	float: left; /*Shifting the squares to left side*/
+	margin: 1.66%;
+	border-radius: 15%; /*Adding rounded corners to the squares*/
+	transition: background 0.6s; /*Squares will take 0.6 second to fade out while disappearing*/
+	/*Provides web browser support as transition property is not user friendly in all browsers*/
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+#container{
+	margin: 20px auto; /*0 at top and bottom and auto at left and right*/
+	max-width: 600px;
+}
+
+h1{
+	text-align: center; /*Aligning texts on the middle*/
+	line-height: 1.1; /*Providing custom spacing between lines*/
+	font-weight: normal; /*Makes the letters thinner*/
+	color: white;
+	background: steelblue;
+	margin: 0; /*Getting rid of all spaces around h1 or the nav bar heading*/
+	text-transform: uppercase; /*Making all texts capital*/
+	padding: 20px 0; /*20px space on top and 20px on bottom and 0 on left and right*/
+}
+
+ /*All IDs are defined with octothorpe or hashtag "#" */
+
+#colorDisplay{
+	font-size: 200%; /*Making the letters bigger*/
+	
+}
+
+#message {
+	display: inline-block;
+	width: 20%; /*Giving 20% space on the span between "New Colors" and "Easy"*/
+
+}
+
+
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+.selected{ /*Defined as class*/
+	color: white;
+	background: steelblue;
+}
+
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase; /*Making all letters capital*/
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px; /*Giving space between letters*/
+	font-size: inherit; /*Makes fonts bolder*/
+	transition: all 0.3s; /*The buttons to take 0.3s time to get blue background on them when hovered over*/
+	/*Provides web browser support as transition property is not user friendly in all browsers*/
+	-webkit-transition: all 0.3s; 
+	-moz-transition: all 0.3s; 
+	outline: none; /*Removes the blue outline from around the buttons*/
+}
+
+/*Sets up the hover effect on the buttons*/
+button:hover{
+	color: white;
+	background: steelblue;
+}
