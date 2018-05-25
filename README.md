@@ -1,2 +1,2 @@
 # WebDevelopment
-My first web development projects
+Udemy Web Development Course
