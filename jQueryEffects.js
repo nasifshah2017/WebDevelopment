@@ -101,8 +101,8 @@
 // }); 
 //});
 
-//The function slides the divs back and forth 
-//depending its visible or not
+//The function slides the divs back and removes 
+//the divs from the site
 
 $("button").on("click", function(){ 
  $('div').slideToggle(1000, function(){ //Built in slideToggle function
