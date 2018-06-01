@@ -1,0 +1,106 @@
+
+h1{
+	background: #2980b9;
+	color: white;
+	margin: 0;
+	padding: 10px 20px; /*Spacing on top and bottom of h1*/
+	text-transform: uppercase; /*Making all h1 texts uppercase*/
+	font-size: 24px;
+	font-weight: normal;
+}
+
+/*Moving the Pencil icon to the right*/
+
+.fa-pencil {
+	float: right;
+}
+
+body{
+	/*Background codes extracted from https://uigradients.com/#AquaMarine  */
+	background: #1A2980;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+ul{
+	list-style: none; /*Getting rid of the bullet points those were by default on the ul item list*/
+	margin: 0;
+	padding: 0;
+}
+
+/*Linking the google font*/
+
+body{
+	font-family: Roboto;
+}
+
+li{
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666; /*Changing the text color*/
+}
+
+/*child(2n) refers to every 2nd li leaving the 1st out*/
+
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+/*Provides the Garbage Can icon a red rectangle background*/
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px; /*Provides space after the Garbage Can icon*/
+	text-align: center; /*Setting the texts at the center*/
+	color: white; /*Making the Garbage Can icon white*/
+	width: 0; /*The Garbage Can icon stays invisible till hovered over*/
+	display: inline-block; /*Makes the red backgroung touch the top and bottom edge of the line*/
+	transition: 0.2s linear; /*Animating the Garbage Can icon by giving it 0.2s time to appear and disappear*/
+	/* "linear" refers to the easing, which means it will appear and disappear at a constant speed*/
+	opacity: 0; /*Fades out the Garbage Can icon when hovering is done*/ 
+
+}
+
+/*When the user hover over the item list (li), then the Garbage Can icon appears*/
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0; /*Makes the Garbage Can icon brighter when hovered over*/
+}
+
+/*Making the input bar bigger*/
+
+input {
+	font-size: 18px;
+	color: #2980b9; /*Changing the text color that the user inputs in the bar*/
+	background-color: #f7f7f7;
+	width: 100%; /*To make bar go all the way across the div*/
+	padding: 13px 13px 13px 20px; /*13px on top, 13px on the right, 13px on the bottom, 20px on the left*/
+	box-sizing: border-box; /*It makes the bar properly sized in the div*/
+	border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus{
+	background: #fff; /*white, when the user clicks on the bar it turns white*/
+	border: 3px solid #2980b9; /*When the user clicks on the border of the bar turns blue*/
+	outline: none;
+}
+
+#container{
+	width: 360px; /*The width of the div*/
+	margin: 100px auto; /*Setting the top and bottom to be 100px*/
+						/*to provide a space on top of the div*/ 
+						/*and left and right is auto to set the div at the center*/
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1); /*Providing a shadow at the back of the div*/
+	
+	}
+
+.completed{
+		color: gray;
+		text-decoration: line-through;
+	}			
+
