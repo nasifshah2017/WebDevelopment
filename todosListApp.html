@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List</title>
+	<!--Linking to todos css file-->
+	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
+	<!--Linking to Google Fonts' Roboto font-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<!--Linking to Font Awesome's online CDN-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<!--Linking to the folder that contains the jQuery library-->
+	<script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+	<div id="container">
+		<!--The class represents the Pencil icon, extracted from https://fontawesome.com/icons-->
+		<h1>To-Do List <i class="fa fa-pencil"></i></h1>
+		<input type ="text" placeholder="Add New Todo">
+
+		<ul>
+			<!--The class represents the Garbage Can icon, extracted from https://fontawesome.com/icons-->
+			<li><span><i class="fa fa-trash"></i></span> Go to Potions Class</li>
+			<li><span><i class="fa fa-trash"></i></span> Buy New Robes</li>
+			<li><span><i class="fa fa-trash"></i></span> Visit Hagrid</li>
+		</ul>
+	</div>
+
+<script type="text/javascript" src="assets/js/todos.js"></script>
+
+</body>
+</html>
