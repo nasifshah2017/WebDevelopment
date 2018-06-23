@@ -32,6 +32,24 @@ app.get("/dog", function(req, res){
     res.send("MEOW!!!");
 });
 
+app.get("/r/:subredditName", function(req, res){
+    var subreddit = req.params.subredditName;
+    res.send("WELCOME TO THE " + subreddit.toUpperCase() +  " SUBREDDIT!");
+});
+
+app.get("/r/:subredditName/comments/:id/:title/", function(req, res){
+    res.send("WELCOME TO THE COMMENTS PAGE!");
+});
+
+/** This ROUTE will show "YOU ARE A STAR!!!" for anything we write after our URL than the objects we defined **/
+
+app.get("*", function(req, res){
+    res.send("YOU ARE A STAR!!!");
+});
+ 
+
+
+
 // Tell Express to Listen for Requests (Start Server)
 
 /** Listen to a particluar PORT and IP address **/
@@ -46,3 +64,66 @@ app.listen(process.env.PORT, process.env.IP, function(){ /** process.env.PORT re
 /** The URL: "https://my-first-web-dev-proj-nasifshah.c9users.io/bye" will output "Goodbye!!"" **/
 /** The URL: "https://my-first-web-dev-proj-nasifshah.c9users.io/" will output "Hi there" **/
 /** The URL: "https://my-first-web-dev-proj-nasifshah.c9users.io/dog" will output "MEOW!!!" **/
+
+/** nasifshah:~/workspace $ cd IntroToExpress
+
+nasifshah:~/workspace $ cd IntroToExpress
+
+nasifshah:~/workspace/IntroToExpress $ cd FirstExpressApp
+
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!!
+
+^C
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!!
+
+^C
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!!
+
+^C
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!!
+
+^C
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ 
+
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!!
+
+^C
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!!
+
+[ subredditName: 'hello' ]
+
+[ subredditName: 'puppies' ]
+
+^C
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!!
+
+^C
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ 
+
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!!
+
+^C
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!!
+
+^C
+nasifshah:~/workspace/IntroToExpress/FirstExpressApp $ node FirstExpressApp.js
+
+Server has started !!! **/
