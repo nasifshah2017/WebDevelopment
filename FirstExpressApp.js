@@ -37,7 +37,7 @@ app.get("/r/:subredditName", function(req, res){
     res.send("WELCOME TO THE " + subreddit.toUpperCase() +  " SUBREDDIT!");
 });
 
-app.get("/r/:subredditName/comments/:id/:title/", function(req, res){
+app.get("/r/:subredditName/comments/:id/:title", function(req, res){
     res.send("WELCOME TO THE COMMENTS PAGE!");
 });
 
