@@ -55,7 +55,7 @@ app.get("*", function(req, res){
 /** Listen to a particluar PORT and IP address **/
 
 app.listen(process.env.PORT, process.env.IP, function(){ /** process.env.PORT returns the identity number of Cloud9's server (port) **/
-        console.log("Server has started !!!")            /** process.env.IP returns the IP adress of Cloud9's server (port) **/
+        console.log("Server has started !!!");            /** process.env.IP returns the IP adress of Cloud9's server (port) **/
 });
 
 /** Cloud9 hosts our site on their own URL, which we can find by clicking the preview and the preview running application **/
